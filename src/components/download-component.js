@@ -2,7 +2,7 @@ class DownloadComponent extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: 'open',
+      mode: "open",
     });
   }
 
@@ -30,10 +30,13 @@ class DownloadComponent extends HTMLElement {
     </style>
     <div class="download-item">
       <a href="#">
+        <picture>
+          <source type="image/webp" srcset="/images/google-play-badge.webp">
           <img src="/images/google-play-badge.png" alt="Google Play"/>
+        </picture>
       </a>
     </div>`;
   }
 }
 
-customElements.define('download-element', DownloadComponent);
+customElements.define("download-element", DownloadComponent);

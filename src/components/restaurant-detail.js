@@ -1,10 +1,10 @@
-import CONFIG from '../scripts/globals/config';
+import CONFIG from "../scripts/globals/config";
 
 class RestaurantDetail extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: 'open',
+      mode: "open",
     });
   }
 
@@ -103,7 +103,11 @@ class RestaurantDetail extends HTMLElement {
       <div class="detail-inner">
         <figure>
           <div class="image-container">
-            <img src="${CONFIG.BASE_URL}images/large/${this._restaurant.pictureId}" alt="${this._restaurant.name}" />
+            <picture>
+              <source media="(min-width: 650px)" srcset="${CONFIG.BASE_URL}images/medium/${this._restaurant.pictureId}" type="image/webp">
+              <source media="(min-width: 992px)" srcset="${CONFIG.BASE_URL}images/large/${this._restaurant.pictureId}" type="image/webp">
+              <img class="lazyload" data-src="${CONFIG.BASE_URL}images/small/${this._restaurant.pictureId}" alt="${this._restaurant.name}" />
+            </picture>
           </div>
         </figure>
         <div class="description-container">
@@ -122,4 +126,4 @@ class RestaurantDetail extends HTMLElement {
   }
 }
 
-customElements.define('restaurant-detail', RestaurantDetail);
+customElements.define("restaurant-detail", RestaurantDetail);

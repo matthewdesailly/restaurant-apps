@@ -2,7 +2,7 @@ class LoadingComponent extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: 'open',
+      mode: "open",
     });
   }
 
@@ -58,7 +58,10 @@ class LoadingComponent extends HTMLElement {
     <div class="loading-container">
       <figure>
         <div class="image-container">
-          <img src="/images/loading-image.png" alt="Loading Image" />
+          <picture>
+            <source type="image/webp" srcset="/images/loading-image.webp">
+            <img src="/images/loading-image.png" alt="Loading Image" />
+          </picture>
         </div>
       </figure>
       <div class="description-container">
@@ -70,4 +73,4 @@ class LoadingComponent extends HTMLElement {
   }
 }
 
-customElements.define('loading-component', LoadingComponent);
+customElements.define("loading-component", LoadingComponent);

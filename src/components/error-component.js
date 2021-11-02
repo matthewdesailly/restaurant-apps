@@ -2,7 +2,7 @@ class ErrorComponent extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: 'open',
+      mode: "open",
     });
   }
 
@@ -62,7 +62,10 @@ class ErrorComponent extends HTMLElement {
     <div class="error-container">
       <figure>
         <div class="image-container">
-          <img src="/images/error-image.png" alt="Error Image" />
+          <picture>
+            <source type="image/webp" srcset="/images/error-image.webp">
+            <img src="/images/error-image.png" alt="Error Image"/>
+          </picture>
         </div>
       </figure>
       <div class="description-container">
@@ -74,4 +77,4 @@ class ErrorComponent extends HTMLElement {
   }
 }
 
-customElements.define('error-component', ErrorComponent);
+customElements.define("error-component", ErrorComponent);

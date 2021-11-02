@@ -2,7 +2,7 @@ class FoodItem extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: 'open',
+      mode: "open",
     });
   }
 
@@ -50,7 +50,10 @@ class FoodItem extends HTMLElement {
     </style>
     <figure>
       <div class="image-container">
-        <img src="/images/menu-placeholder.png" alt="${this._food.name}" />
+        <picture>
+          <source type="image/webp" srcset="/images/menu-placeholder.webp">
+          <img src="/images/menu-placeholder.png" alt="${this._food.name}" />
+        </picture>
         <div class="image-inner">
           <div class="food-name">
             <p>${this._food.name}</p>
@@ -61,4 +64,4 @@ class FoodItem extends HTMLElement {
   }
 }
 
-customElements.define('food-item', FoodItem);
+customElements.define("food-item", FoodItem);

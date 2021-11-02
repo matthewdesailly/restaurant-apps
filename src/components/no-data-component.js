@@ -2,7 +2,7 @@ class NoDataComponent extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: 'open',
+      mode: "open",
     });
   }
 
@@ -58,7 +58,10 @@ class NoDataComponent extends HTMLElement {
       <div class="no-data-container">
         <figure>
           <div class="image-container">
-            <img src="/images/no-data-image.png" alt="No Data Image" />
+            <picture>
+              <source type="image/webp" srcset="/images/no-data-image.webp">
+              <img src="/images/no-data-image.png" alt="No Data Image" />
+            </picture>
           </div>
         </figure>
         <div class="description-container">
@@ -70,4 +73,4 @@ class NoDataComponent extends HTMLElement {
   }
 }
 
-customElements.define('no-data-component', NoDataComponent);
+customElements.define("no-data-component", NoDataComponent);
