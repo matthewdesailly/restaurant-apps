@@ -12,7 +12,6 @@ class RestaurantItem extends HTMLElement {
       <div class="image-container">
         <a href="#/detail-restaurant/${this._restaurant.id}">
           <picture>
-            <source media="(min-width: 650px)" srcset="${CONFIG.BASE_URL}images/medium/${this._restaurant.pictureId}" type="image/webp">
             <source media="(min-width: 992px)" srcset="${CONFIG.BASE_URL}images/large/${this._restaurant.pictureId}" type="image/webp">
             <img class="lazyload" data-src="${CONFIG.BASE_URL}images/small/${this._restaurant.pictureId}" alt="${this._restaurant.name}" />
           </picture>
