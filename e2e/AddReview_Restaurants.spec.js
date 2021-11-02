@@ -4,10 +4,10 @@ Before(({ I }) => {
   I.amOnPage("/");
 });
 
-// Scenario("showing restaurants list", ({ I }) => {
-//   I.seeElement("restaurant-list");
-//   I.seeElement("restaurant-item");
-// });
+Scenario("showing restaurants list", ({ I }) => {
+  I.seeElement("restaurant-list");
+  I.seeElement("restaurant-item");
+});
 
 Scenario("add review to one restaurant", ({ I }) => {
   I.seeElement("restaurant-list");
@@ -20,7 +20,10 @@ Scenario("add review to one restaurant", ({ I }) => {
   I.seeElement("pierce/#inputReview");
   I.seeElement("pierce/#submit");
 
-  I.type("pierce/#inputName", "matthewdesailly");
-  I.type("pierce/#inputReview", "nice");
+  I.appendField("pierce/#inputName", "matthewdesailly");
+  I.appendField("pierce/#inputReview", "nice");
   I.click("pierce/#submit");
+
+  I.see("matthewdesailly", "pierce/.user-name p");
+  I.see("nice", "pierce/.user-review p");
 });

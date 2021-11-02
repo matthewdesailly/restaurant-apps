@@ -92,7 +92,7 @@ class CustomerReview extends HTMLElement {
         </div>
         <div class="form-input">
           <label for="inputReview">Your Review</label>
-          <textarea class="form-control" id="inputReview" placeholder="Type your review" rows="4" cols="50"></textarea>
+          <textarea class="form-control" id="inputReview" placeholder="Type your review" rows="4" cols="50" required></textarea>
         </div>
         <button class="form-button" id="submit">Submit</button>
       </div>
@@ -119,7 +119,9 @@ class CustomerReview extends HTMLElement {
         name: inputName.value,
         review: inputReview.value,
       };
-      RestaurantSource.addReview(reviewData);
+      if (reviewData.name && reviewData.review) {
+        RestaurantSource.addReview(reviewData);
+      }
     });
   }
 }

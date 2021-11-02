@@ -55,13 +55,13 @@ class ReviewData extends HTMLElement {
     <div class="data-container">
       <div class="data-inner">
         <div class="user-name">
-          <p class="a">${this._review.name}</p>
+          <p>${this._review.name}</p>
         </div>
         <div class="user-date">
-          <p class="a">${this._review.date}</p>
+          <p>${this._review.date}</p>
         </div>
         <div class="user-review">
-          <p class="a">${this._review.review}</p>
+          <p>${this._review.review}</p>
         </div>
       </div>
     </div>`;
