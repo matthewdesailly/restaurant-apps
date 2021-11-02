@@ -60,6 +60,7 @@ class LoadingComponent extends HTMLElement {
         <div class="image-container">
           <picture>
             <source type="image/webp" srcset="/images/loading-image.webp">
+            <source type="image/png" srcset="/images/loading-image.png">
             <img src="/images/loading-image.png" alt="Loading Image" />
           </picture>
         </div>

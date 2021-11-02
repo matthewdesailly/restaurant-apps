@@ -60,6 +60,7 @@ class NoDataComponent extends HTMLElement {
           <div class="image-container">
             <picture>
               <source type="image/webp" srcset="/images/no-data-image.webp">
+              <source type="image/png" srcset="/images/no-data-image.png">
               <img src="/images/no-data-image.png" alt="No Data Image" />
             </picture>
           </div>

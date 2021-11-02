@@ -64,6 +64,7 @@ class ErrorComponent extends HTMLElement {
         <div class="image-container">
           <picture>
             <source type="image/webp" srcset="/images/error-image.webp">
+            <source type="image/png" srcset="/images/error-image.png">
             <img src="/images/error-image.png" alt="Error Image"/>
           </picture>
         </div>

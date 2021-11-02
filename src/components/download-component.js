@@ -32,6 +32,7 @@ class DownloadComponent extends HTMLElement {
       <a href="#">
         <picture>
           <source type="image/webp" srcset="/images/google-play-badge.webp">
+          <source type="image/png" srcset="/images/google-play-badge.png">
           <img src="/images/google-play-badge.png" alt="Google Play"/>
         </picture>
       </a>

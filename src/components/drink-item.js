@@ -52,6 +52,7 @@ class DrinkItem extends HTMLElement {
       <div class="image-container">
         <picture>
           <source type="image/webp" srcset="/images/menu-placeholder.webp">
+          <source type="image/png" srcset="/images/menu-placeholder.png">
           <img src="/images/menu-placeholder.png" alt="${this._drink.name}" />
         </picture>
         <div class="image-inner">
