@@ -23,7 +23,10 @@ class FooterElement extends HTMLElement {
       background-color: #2b2b2b;
       color: #f1f1f1;
       text-align: center;
-      padding: 20px 0;
+    }
+    
+    footer p{
+      padding: 15px 0;
     }
       
     footer span {
