@@ -1,7 +1,7 @@
 var serviceWorkerOption = {
   "assets": [
     "/c00e443505e8be1ad7d989a1e1f82c4f.png",
-    "/1944426b0e78307d9711681df96bd23e.png",
+    "/865ff86b73b636a7ceeff1897b04357f.png",
     "/0.bundle.js",
     "/1.bundle.js",
     "/2.bundle.js",
@@ -11,11 +11,6 @@ var serviceWorkerOption = {
     "/6.bundle.js",
     "/favicon.png",
     "/manifest.json",
-    "/images/error-image.png",
-    "/images/google-play-badge.png",
-    "/images/loading-image.png",
-    "/images/menu-placeholder.png",
-    "/images/no-data-image.png",
     "/icons/icon-128x128.png",
     "/icons/icon-192x192.png",
     "/icons/icon-256x256.png",
@@ -23,8 +18,11 @@ var serviceWorkerOption = {
     "/icons/icon-64x64.png",
     "/icons/location-marker.svg",
     "/icons/rating.svg",
-    "/pattern/so-white.png",
-    "/pattern/subtle_white_feathers.png",
+    "/images/error-image.png",
+    "/images/google-play-badge.png",
+    "/images/loading-image.png",
+    "/images/menu-placeholder.png",
+    "/images/no-data-image.png",
     "/index.html"
   ]
 };
