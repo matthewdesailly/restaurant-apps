@@ -1,6 +1,7 @@
 import 'regenerator-runtime';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import swRegister from './utils/sw-register';
 import '../styles/main.css';
 import '../styles/config.css';
 import '../styles/responsive.css';
@@ -17,7 +18,6 @@ import '../components/loading-component';
 import '../components/error-component';
 import '../components/no-data-component';
 import App from './views/app';
-import swRegister from './utils/sw-register';
 
 const appBar = document.querySelector('app-bar').shadowRoot;
 
