@@ -1,10 +1,10 @@
-import CONFIG from "../scripts/globals/config";
+import CONFIG from '../scripts/globals/config';
 
 class RestaurantDetail extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: "open",
+      mode: 'open',
     });
   }
 
@@ -126,4 +126,4 @@ class RestaurantDetail extends HTMLElement {
   }
 }
 
-customElements.define("restaurant-detail", RestaurantDetail);
+customElements.define('restaurant-detail', RestaurantDetail);

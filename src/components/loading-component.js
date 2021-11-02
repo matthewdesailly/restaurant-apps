@@ -2,7 +2,7 @@ class LoadingComponent extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: "open",
+      mode: 'open',
     });
   }
 
@@ -73,4 +73,4 @@ class LoadingComponent extends HTMLElement {
   }
 }
 
-customElements.define("loading-component", LoadingComponent);
+customElements.define('loading-component', LoadingComponent);

@@ -2,7 +2,7 @@ class FoodItem extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: "open",
+      mode: 'open',
     });
   }
 
@@ -64,4 +64,4 @@ class FoodItem extends HTMLElement {
   }
 }
 
-customElements.define("food-item", FoodItem);
+customElements.define('food-item', FoodItem);

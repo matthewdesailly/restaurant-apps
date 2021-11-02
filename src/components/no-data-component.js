@@ -2,7 +2,7 @@ class NoDataComponent extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: "open",
+      mode: 'open',
     });
   }
 
@@ -73,4 +73,4 @@ class NoDataComponent extends HTMLElement {
   }
 }
 
-customElements.define("no-data-component", NoDataComponent);
+customElements.define('no-data-component', NoDataComponent);

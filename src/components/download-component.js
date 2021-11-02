@@ -2,7 +2,7 @@ class DownloadComponent extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: "open",
+      mode: 'open',
     });
   }
 
@@ -39,4 +39,4 @@ class DownloadComponent extends HTMLElement {
   }
 }
 
-customElements.define("download-element", DownloadComponent);
+customElements.define('download-element', DownloadComponent);

@@ -2,7 +2,7 @@ class ErrorComponent extends HTMLElement {
   constructor() {
     super();
     this.shadowDOM = this.attachShadow({
-      mode: "open",
+      mode: 'open',
     });
   }
 
@@ -77,4 +77,4 @@ class ErrorComponent extends HTMLElement {
   }
 }
 
-customElements.define("error-component", ErrorComponent);
+customElements.define('error-component', ErrorComponent);
